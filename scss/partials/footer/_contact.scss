@@ -1,0 +1,23 @@
+/**************************************
+	MAIN STYLES -- CONTACT INFO
+**************************************/
+
+#contact-container {
+	@include text-align(center);
+	padding: 50px;
+}
+.contact-info { 
+	a {
+		text-decoration: none;
+		color: black;
+	}
+	 a:hover {
+		color: $prim-color;
+	}
+}
+@media #{$monitor} {
+	.contact-para {
+		@include text-align(center);
+	}
+}
+	

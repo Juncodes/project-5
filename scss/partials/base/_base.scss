@@ -1,0 +1,24 @@
+//Color Variables
+$prim-color: #0abab5;
+
+//Screen Resolution variables
+$tablet: "only screen and (min-width : 768px)";
+$monitor: "only screen and (min-width: 1024px)";
+
+//text align 
+@mixin text-align($align) {
+	text-align: $align;
+}
+
+//Mixins
+@mixin margin {
+	margin-left: .65em;
+	margin-right: .65em;
+}
+
+
+@mixin flex($flex, $direction, $spacing) {
+	display: $flex;
+	flex-direction: $direction;
+	justify-content: $spacing;
+} 

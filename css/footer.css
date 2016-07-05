@@ -1,0 +1,55 @@
+/****************************************
+		NONE MOBILE DISPLAY -- OFF
+****************************************/
+#none-mobile {
+  display: none; }
+  @media only screen and (min-width: 768px) {
+    #none-mobile {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; } }
+
+/**************************************
+	MAIN STYLES -- FOOTER MENU
+**************************************/
+#mobile-only {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center; }
+  @media only screen and (min-width: 768px) {
+    #mobile-only {
+      display: none; } }
+
+.backtop,
+.jun {
+  margin: 0;
+  padding: 30px 20px 30px 20px;
+  /* footer spacing */ }
+
+.backtop a {
+  text-decoration: none;
+  color: black; }
+
+.backtop a:hover {
+  color: #0abab5;
+  transition: 0.7s; }
+
+@media only screen and (min-width: 768px) {
+  .right {
+    padding-bottom: 40px; }
+    .right li {
+      float: left;
+      padding: 30px 10px 30px 0px;
+      /* footer spacing */ }
+    .right a {
+      text-decoration: none;
+      color: black;
+      margin-left: .65em;
+      margin-right: .65em; }
+    .right a:hover {
+      color: #0abab5;
+      transition: 0.7s; }
+  .left {
+    margin-right: auto;
+    padding-bottom: 40px; } }

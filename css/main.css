@@ -1,0 +1,216 @@
+/**************************************
+			MAIN STYLES
+**************************************/
+.self-intro,
+.drawing,
+header,
+#contact-container {
+  background-color: #f3f3f3; }
+
+@media only screen and (min-width: 1024px) {
+  .self-intro {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .intro {
+    padding-left: 5%; } }
+
+#nav,
+#main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: none; }
+
+@media only screen and (min-width: 1024px) {
+  flex-direction: row; }
+
+#jc {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 1em; }
+  @media only screen and (min-width: 768px) {
+    #jc {
+      font-size: 50px; } }
+  @media only screen and (min-width: 1024px) {
+    #jc #jc {
+      margin: 0;
+      padding-left: 5%; } }
+
+@media only screen and (min-width: 768px) {
+  #nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px 20% 30px 20%; } }
+
+@media only screen and (min-width: 1024px) {
+  #nav {
+    margin-left: auto;
+    padding: 30px; } 
+ 	}
+
+#nav a {
+  text-align: center;
+  margin-top: 2em;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  color: grey;
+  display: block; }
+
+#nav a:hover {
+  color: #0abab5;
+  border-bottom-color: #0abab5;
+  transition: 0.7s; }
+
+@media only screen and (min-width: 1024px) {
+  #nav li {
+    margin-right: 20px; } }
+
+.drawing {
+  max-height: 350px;
+  max-width: 350px;
+  display: block;
+  padding: 1em;
+  margin: 0 auto; }
+  @media only screen and (min-width: 768px) {
+    .drawing {
+      float: right;
+      height: 200px;
+      width: 350px; } }
+  @media only screen and (min-width: 1024px) {
+    .drawing {
+      float: right;
+      max-height: 100%;
+      max-width: 100%; } }
+
+/**************************************
+	MAIN STYLES -- MAIN PROFOLIO 
+**************************************/
+#port {
+  text-align: center;
+  display: block;
+  font-size: 1.5em;
+  font-weight: 700; }
+
+.intro {
+  padding-bottom: 1em;
+  padding: 20px 50px 30px 50px; }
+  @media only screen and (min-width: 768px) {
+    .intro {
+      margin-top: 0;
+      padding: 50px 40px 0 20px;
+      text-align: left;
+      max-width: 50%; } }
+
+.projects img {
+  max-height: 95%;
+  max-width: 95%;
+  display: block;
+  margin: 0 auto;
+  padding: 5px; }
+
+.projects h4 {
+  text-align: center;
+  padding: 0 20px 0 20px;
+  font-size: 1.145em; }
+
+.projects p {
+  text-align: center;
+  padding: 0 20px 0 20px; }
+
+@media only screen and (min-width: 768px) {
+  .projects li {
+    float: left;
+    display: block;
+    max-width: 50%; } }
+
+@media only screen and (min-width: 1024px) {
+  .projects li {
+    float: left;
+    display: block;
+    max-width: 33.33%; } }
+
+/**************************************
+	MAIN STYLES -- CONTACT INFO
+**************************************/
+#contact-container {
+  text-align: center;
+  padding: 50px; }
+
+.contact-info a {
+  text-decoration: none;
+  color: black; }
+
+.contact-info a:hover {
+  color: #0abab5; }
+
+@media only screen and (min-width: 1024px) {
+  .contact-para {
+    text-align: center; } }
+
+/****************************************
+		NONE MOBILE DISPLAY -- OFF
+****************************************/
+#none-mobile {
+  display: none; }
+  @media only screen and (min-width: 768px) {
+    #none-mobile {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; } }
+
+/**************************************
+	MAIN STYLES -- FOOTER MENU
+**************************************/
+#mobile-only {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center; }
+  @media only screen and (min-width: 768px) {
+    #mobile-only {
+      display: none; } }
+
+.backtop,
+.jun {
+  margin: 0;
+  padding: 30px 20px 30px 20px;
+  /* footer spacing */ }
+
+.backtop a {
+  text-decoration: none;
+  color: black; }
+
+.backtop a:hover {
+  color: #0abab5;
+  transition: 0.7s; }
+
+@media only screen and (min-width: 768px) {
+  .right {
+    padding-bottom: 40px; }
+    .right li {
+      float: left;
+      padding: 30px 10px 30px 0px;
+      /* footer spacing */ }
+    .right a {
+      text-decoration: none;
+      color: black;
+      margin-left: .65em;
+      margin-right: .65em; }
+    .right a:hover {
+      color: #0abab5;
+      transition: 0.7s; }
+  .left {
+    margin-right: auto;
+    padding-bottom: 40px; } }
+
+/****************************************
+				CLEARFIX
+****************************************/
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0; }

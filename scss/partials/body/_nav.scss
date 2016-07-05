@@ -1,0 +1,88 @@
+/**************************************
+			MAIN STYLES
+**************************************/
+.self-intro,
+.drawing,
+header,
+#contact-container {
+	background-color: #f3f3f3; 
+}
+@media #{$monitor} {
+	.self-intro {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.intro {
+		padding-left: 5%;
+	}
+}
+#nav,
+#main-header {
+	@include flex(flex, column, none);
+}
+@media #{$monitor} {
+		flex-direction: row;
+}
+
+#jc {
+	@include text-align(center);
+	margin: 0 auto;
+	padding-top: 1em; 
+	@media #{$tablet} {
+		font-size: 50px;
+	}
+	@media#{$monitor} {
+		#jc{
+		margin: 0;
+		padding-left: 5%;
+		}
+	}
+
+}
+
+#nav{
+	@media #{$tablet} { 
+		@include flex(flex, row, space-between);
+		@include text-align(center);
+		padding: 20px 20% 30px 20%;
+	}
+	@media #{$monitor} {
+		margin-left: auto;
+		padding: 30px;
+	}
+	a {
+		@include text-align(center);
+		margin-top: 2em;
+		border-bottom: 1px solid #ddd;
+		text-decoration: none;
+		color: grey;
+		display: block;
+	}
+	a:hover {
+		color: $prim-color;
+		border-bottom-color: $prim-color;
+		transition: 0.7s; 
+	}
+	li {
+		@media #{$monitor} {
+			margin-right: 20px;
+		}
+	}
+}
+.drawing {
+	max-height: 350px;
+	max-width: 350px;
+	display: block; 
+	padding: 1em;
+	margin: 0 auto; 
+	@media #{$tablet} {
+		float: right;
+		height: 200px;
+		width: 350px;
+	}
+	@media #{$monitor} {
+		float: right;
+		max-height: 100%;
+		max-width: 100%;
+	}		
+}	

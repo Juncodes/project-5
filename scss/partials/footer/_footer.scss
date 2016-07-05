@@ -1,0 +1,62 @@
+/****************************************
+		NONE MOBILE DISPLAY -- OFF
+****************************************/
+
+#none-mobile {
+	display: none;
+	@media #{$tablet} {
+		@include flex(flex, row, space-between);
+	}
+}
+
+/**************************************
+	MAIN STYLES -- FOOTER MENU
+**************************************/
+
+#mobile-only {
+	@include flex(flex, row, space-between);
+	@include text-align(center);
+	@media #{$tablet} {
+		display: none;
+	}
+}
+
+.backtop,
+.jun {
+	margin: 0;
+	padding: 30px 20px 30px 20px; /* footer spacing */
+}
+.backtop{ 
+	a {
+		text-decoration: none;
+		color: black;
+	}
+	a:hover{
+		color: $prim-color;
+		transition: 0.7s;
+	}
+}
+
+@media #{$tablet} {
+	.right {
+		padding-bottom: 40px;
+		li {
+			float: left;
+			padding: 30px 10px 30px 0px; /* footer spacing */
+		}
+		a {
+			text-decoration: none;
+			color: black;
+			@include margin;
+		}
+		a:hover {
+			color: $prim-color;
+			transition: 0.7s;
+		}
+	}
+	.left {
+		margin-right: auto;
+		padding-bottom: 40px;
+	}
+}
+

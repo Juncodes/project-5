@@ -1,0 +1,46 @@
+/**************************************
+	MAIN STYLES -- MAIN PROFOLIO 
+**************************************/
+#port {
+  text-align: center;
+  display: block;
+  font-size: 1.5em;
+  font-weight: 700; }
+
+.intro {
+  padding-bottom: 1em;
+  padding: 20px 50px 30px 50px; }
+  @media only screen and (min-width: 768px) {
+    .intro {
+      margin-top: 0;
+      padding: 50px 40px 0 20px;
+      text-align: left;
+      max-width: 50%; } }
+
+.projects img {
+  max-height: 95%;
+  max-width: 95%;
+  display: block;
+  margin: 0 auto;
+  padding: 5px; }
+
+.projects h4 {
+  text-align: center;
+  padding: 0 20px 0 20px;
+  font-size: 1.145em; }
+
+.projects p {
+  text-align: center;
+  padding: 0 20px 0 20px; }
+
+@media only screen and (min-width: 768px) {
+  .projects li {
+    float: left;
+    display: block;
+    max-width: 50%; } }
+
+@media only screen and (min-width: 1024px) {
+  .projects li {
+    float: left;
+    display: block;
+    max-width: 33.33%; } }

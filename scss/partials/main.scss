@@ -1,0 +1,20 @@
+@import '_base';
+@import '_nav';
+@import '_body';
+@import '_contact';
+@import '_footer';
+
+
+/****************************************
+				CLEARFIX
+****************************************/
+	
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: "";
+	clear: both;
+	height: 0;
+}
+

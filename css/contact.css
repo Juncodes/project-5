@@ -1,0 +1,17 @@
+/**************************************
+	MAIN STYLES -- CONTACT INFO
+**************************************/
+#contact-container {
+  text-align: center;
+  padding: 50px; }
+
+.contact-info a {
+  text-decoration: none;
+  color: black; }
+
+.contact-info a:hover {
+  color: #0abab5; }
+
+@media only screen and (min-width: 1024px) {
+  .contact-para {
+    text-align: center; } }
