@@ -5,7 +5,7 @@
 .drawing,
 header,
 #contact-container {
-	background-color: #f3f3f3; 
+	background-color: $back-color; 
 }
 @media #{$monitor} {
 	.self-intro {
@@ -18,20 +18,21 @@ header,
 }
 #nav,
 #main-header {
-	@include flex(flex, column, none);
+	@include flex(flex, column);
 }
-@media #{$monitor} {
+	@media #{$monitor} {
 		flex-direction: row;
 }
 
 #jc {
+	@include %font;
 	@include text-align(center);
 	margin: 0 auto;
 	padding-top: 1em; 
-	@media #{$tablet} {
+	@include bp(phone-tablet) {
 		font-size: 50px;
 	}
-	@media#{$monitor} {
+	@include bp(big-screen) {
 		#jc{
 		margin: 0;
 		padding-left: 5%;
@@ -41,12 +42,13 @@ header,
 }
 
 #nav{
-	@media #{$tablet} { 
-		@include flex(flex, row, space-between);
+	@include bp(phone-tablet) { 
+		@include flex(flex, row);
+		justify-content: space-between;
 		@include text-align(center);
 		padding: 20px 20% 30px 20%;
 	}
-	@media #{$monitor} {
+	@include bp(big-screen) {
 		margin-left: auto;
 		padding: 30px;
 	}
@@ -75,12 +77,12 @@ header,
 	display: block; 
 	padding: 1em;
 	margin: 0 auto; 
-	@media #{$tablet} {
+	@include bp(phone-tablet) {
 		float: right;
 		height: 200px;
 		width: 350px;
 	}
-	@media #{$monitor} {
+	@include bp(big-screen) {
 		float: right;
 		max-height: 100%;
 		max-width: 100%;

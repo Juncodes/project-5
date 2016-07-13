@@ -8,6 +8,7 @@
 }
 .contact-info { 
 	a {
+		@include %font;
 		text-decoration: none;
 		color: black;
 	}
@@ -15,7 +16,7 @@
 		color: $prim-color;
 	}
 }
-@media #{$monitor} {
+@include bp(big-screen) {
 	.contact-para {
 		@include text-align(center);
 	}
