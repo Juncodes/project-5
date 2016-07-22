@@ -1,3 +1,14 @@
+.projects li {
+  float: left;
+  display: block; }
+
+.backtop,
+.jun, .right li {
+  padding: 30px 10px 30px 0px; }
+
+#jc, .contact-info a {
+  font-family: "Times New Roman", Times, serif; }
+
 /**************************************
 			MAIN STYLES
 **************************************/
@@ -7,7 +18,7 @@ header,
 #contact-container {
   background-color: #f3f3f3; }
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .self-intro {
     padding-top: 20px;
     padding-bottom: 20px; }
@@ -17,25 +28,25 @@ header,
 #nav,
 #main-header {
   display: flex;
-  flex-direction: column;
-  justify-content: none; }
-
-@media only screen and (min-width: 1024px) {
-  flex-direction: row; }
+  flex-direction: column; }
+  @media (min-width: 1024px) {
+    #nav,
+    #main-header {
+      flex-direction: row; } }
 
 #jc {
   text-align: center;
   margin: 0 auto;
   padding-top: 1em; }
-  @media only screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     #jc {
       font-size: 50px; } }
-  @media only screen and (min-width: 1024px) {
-    #jc #jc {
+  @media (min-width: 1024px) {
+    #jc {
       margin: 0;
       padding-left: 5%; } }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   #nav {
     display: flex;
     flex-direction: row;
@@ -43,7 +54,7 @@ header,
     text-align: center;
     padding: 20px 20% 30px 20%; } }
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   #nav {
     margin-left: auto;
     padding: 30px; } }
@@ -61,7 +72,7 @@ header,
   border-bottom-color: #0abab5;
   transition: 0.7s; }
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   #nav li {
     margin-right: 20px; } }
 
@@ -71,12 +82,12 @@ header,
   display: block;
   padding: 1em;
   margin: 0 auto; }
-  @media only screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .drawing {
       float: right;
       height: 200px;
       width: 350px; } }
-  @media only screen and (min-width: 1024px) {
+  @media (min-width: 1024px) {
     .drawing {
       float: right;
       max-height: 100%;
@@ -94,7 +105,7 @@ header,
 .intro {
   padding-bottom: 1em;
   padding: 20px 50px 30px 50px; }
-  @media only screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .intro {
       margin-top: 0;
       padding: 50px 40px 0 20px;
@@ -117,16 +128,12 @@ header,
   text-align: center;
   padding: 0 20px 0 20px; }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .projects li {
-    float: left;
-    display: block;
     max-width: 50%; } }
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .projects li {
-    float: left;
-    display: block;
     max-width: 33.33%; } }
 
 /**************************************
@@ -143,16 +150,12 @@ header,
 .contact-info a:hover {
   color: #0abab5; }
 
-@media only screen and (min-width: 1024px) {
-  .contact-para {
-    text-align: center; } }
-
 /****************************************
 		NONE MOBILE DISPLAY -- OFF
 ****************************************/
 #none-mobile {
   display: none; }
-  @media only screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     #none-mobile {
       display: flex;
       flex-direction: row;
@@ -166,14 +169,13 @@ header,
   flex-direction: row;
   justify-content: space-between;
   text-align: center; }
-  @media only screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     #mobile-only {
       display: none; } }
 
 .backtop,
 .jun {
   margin: 0;
-  padding: 30px 20px 30px 20px;
   /* footer spacing */ }
 
 .backtop a {
@@ -184,12 +186,11 @@ header,
   color: #0abab5;
   transition: 0.7s; }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .right {
     padding-bottom: 40px; }
     .right li {
       float: left;
-      padding: 30px 10px 30px 0px;
       /* footer spacing */ }
     .right a {
       text-decoration: none;

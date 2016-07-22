@@ -1,23 +1,25 @@
 //Color Variables
 $prim-color: #0abab5;
-$back-color: #f3f3f3;
+$backg-color: #f3f3f3;
+$nav-a-color: grey; 
+$footer-color: black;
+
+//Font Size
+$h1-font-size: 50px;
+$h4-font-size: 1.145em; 
+
+//Mixins
 
 //Screen Resolution variables
 @mixin bp($point) {
-	$tablet: "(min-width : 768px)";
-	$monitor: "(min-width: 1024px)";
+  @if $point == tablet {
+    @media (min-width: 768px) { @content; }
+  }
+  @else if $point == monitor {
+    @media (min-width: 1024px) { @content; }
+  }
+}
 
-	@if $point == phone-tablet {
-		@media #{$tablet} { @content; }
-	}
-	@else if $point == big-screen{
-		@media #{$monitor} { @content; }
-	}
-
-//Font Size
-$special-font-size: 1.145em; 
-
-//Mixins
 @mixin margin {
 	margin-left: .65em;
 	margin-right: .65em;

@@ -11,7 +11,7 @@
 .intro {
 	padding-bottom: 1em;
 	padding: 20px 50px 30px 50px;
-	@include bp(phone-tablet) {
+	@include bp(tablet) {
 		margin-top: 0;
 		padding: 50px 40px 0 20px;
 		text-align: left;
@@ -31,19 +31,19 @@
 	 h4 {
 		@include text-align(center);
 		padding: 0 20px 0 20px; 
-		font-size: $special-font-size;
+		font-size: $h4-font-size;
 	 }
 	 p {
 		@include text-align(center); 
 		padding: 0 20px 0 20px;
 	}
 	li{
-		@include bp(phone-tablet) {
-			@include %display-f-left;
+		@include bp(tablet) {
+			@extend %display-f-left;
 			max-width: 50%;
 		}
-		@include bp(big-screen) {
-			@include %display-f-left; 
+		@include bp(monitor) {
+			@extend %display-f-left; 
 			max-width: 33.33%;
 		}
 	}

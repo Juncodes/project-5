@@ -8,9 +8,9 @@
 }
 .contact-info { 
 	a {
-		@include %font;
+		@extend %font;
 		text-decoration: none;
-		color: black;
+		color: $footer-color;
 	}
 	 a:hover {
 		color: $prim-color;

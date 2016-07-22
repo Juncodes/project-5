@@ -5,9 +5,9 @@
 .drawing,
 header,
 #contact-container {
-	background-color: $back-color; 
+	background-color: $backg-color; 
 }
-@media #{$monitor} {
+@include bp(monitor) {
 	.self-intro {
 		padding-top: 20px;
 		padding-bottom: 20px;
@@ -19,36 +19,33 @@ header,
 #nav,
 #main-header {
 	@include flex(flex, column);
-}
-	@media #{$monitor} {
+	
+	@include bp(monitor) {
 		flex-direction: row;
+	}
 }
 
 #jc {
-	@include %font;
+	@extend %font;
 	@include text-align(center);
 	margin: 0 auto;
 	padding-top: 1em; 
-	@include bp(phone-tablet) {
-		font-size: 50px;
+	@include bp(tablet) {
+		font-size: $h1-font-size;
 	}
-	@include bp(big-screen) {
-		#jc{
+	@include bp(monitor) {
 		margin: 0;
 		padding-left: 5%;
-		}
 	}
-
 }
-
 #nav{
-	@include bp(phone-tablet) { 
+	@include bp(tablet) { 
 		@include flex(flex, row);
 		justify-content: space-between;
 		@include text-align(center);
 		padding: 20px 20% 30px 20%;
 	}
-	@include bp(big-screen) {
+	@include bp(monitor) {
 		margin-left: auto;
 		padding: 30px;
 	}
@@ -57,7 +54,7 @@ header,
 		margin-top: 2em;
 		border-bottom: 1px solid #ddd;
 		text-decoration: none;
-		color: grey;
+		color: $nav-a-color;
 		display: block;
 	}
 	a:hover {
@@ -66,7 +63,7 @@ header,
 		transition: 0.7s; 
 	}
 	li {
-		@media #{$monitor} {
+		@include bp(monitor) {
 			margin-right: 20px;
 		}
 	}
@@ -77,12 +74,12 @@ header,
 	display: block; 
 	padding: 1em;
 	margin: 0 auto; 
-	@include bp(phone-tablet) {
+	@include bp(tablet) {
 		float: right;
 		height: 200px;
 		width: 350px;
 	}
-	@include bp(big-screen) {
+	@include bp(monitor) {
 		float: right;
 		max-height: 100%;
 		max-width: 100%;

@@ -4,8 +4,9 @@
 
 #none-mobile {
 	display: none;
-	@media #{$tablet} {
-		@include flex(flex, row, space-between);
+	@include bp(tablet) {
+		@include flex(flex, row);
+		justify-content: space-between;
 	}
 }
 
@@ -14,9 +15,10 @@
 **************************************/
 
 #mobile-only {
-	@include flex(flex, row, space-between);
+	@include flex(flex, row);
+	justify-content: space-between;
 	@include text-align(center);
-	@include bp(phone-tablet) {
+	@include bp(tablet) {
 		display: none;
 	}
 }
@@ -24,28 +26,28 @@
 .backtop,
 .jun {
 	margin: 0;
-	@include %footer-padding /* footer spacing */
+	@extend %footer-padding /* footer spacing */
 }
 .backtop{ 
 	a {
 		text-decoration: none;
-		color: black;
+		color: $footer-color;
 	}
 	a:hover{
 		color: $prim-color;
 		transition: 0.7s;
 	}
 }
-	@include bp(phone-tablet) {
+	@include bp(tablet) {
 	.right {
 		padding-bottom: 40px;
 		li {
 			float: left;
-			@include %footer-padding /* footer spacing */
+			@extend %footer-padding /* footer spacing */
 		}
 		a {
 			text-decoration: none;
-			color: black;
+			color:$footer-color;
 			@include margin;
 		}
 		a:hover {
