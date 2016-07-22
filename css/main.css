@@ -80,7 +80,7 @@ header,
   max-height: 350px;
   max-width: 350px;
   display: block;
-  padding: 1em;
+  padding: 15px 0;
   margin: 0 auto; }
   @media (min-width: 768px) {
     .drawing {
